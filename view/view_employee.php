@@ -46,7 +46,7 @@
 					<td><?php echo $rows["c_email"];?></td>
 					<td>
 						<?php 
-							$department = $this->model->fetch_one("select * from tbl_department where fk_depart_id = ".$rows["fk_depart_id"]);
+							$department = $this->model->fetch_one("select * from tbl_department where pk_depart_id = ".$rows["fk_depart_id"]);
 							echo $department["c_name"];
 						?>
 					</td>

@@ -43,7 +43,7 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-10">
 					<input type="submit" name="btn" class="btn btn-success" value="Add">
-					<a class="btn btn-default" href="index.php?controller=employee" role="button">Cancel</a>
+					<a class="btn btn-default" href="index.php?controller=department" role="button">Cancel</a>
 				</div>
 			</div>
 			<!-- end row -->

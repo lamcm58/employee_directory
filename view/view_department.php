@@ -39,7 +39,7 @@
 						?>
 					</td>
 					<td>
-						<a href="index.php?controller=list_employee&id=<?php echo $rows["fk_depart_id"];?>" class="btn btn-info"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;View</a>
+						<a href="index.php?controller=list_employee&id=<?php echo $rows["pk_depart_id"];?>" class="btn btn-info"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;View</a>
 					</td>
 					<td>
 						<a href="index.php?controller=edit_department&act=edit&id=<?php echo $rows["pk_depart_id"];?>" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Edit</a>

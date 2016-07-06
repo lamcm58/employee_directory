@@ -62,11 +62,11 @@
 						$list_department = $this->model->fetch("select * from tbl_department");
 						foreach ($list_department as $rows_department){
 							$selected = "";
-							if ($rows_department["fk_depart_id"] == $arr["pk_depart_id"]) {
+							if ($rows_department["pk_depart_id"] == $arr["fk_depart_id"]) {
 								$selected = "selected";
 							}
 					?>
-						<option <?php echo $selected; ?> value="<?php echo $rows_department["fk_depart_id"]; ?>"><?php echo $rows_department["c_name"]; ?></option>
+						<option <?php echo $selected; ?> value="<?php echo $rows_department["pk_depart_id"]; ?>"><?php echo $rows_department["c_name"]; ?></option>
 					<?php } ?>
 					</select>
 				</div>

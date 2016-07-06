@@ -13,11 +13,10 @@
 						break;
 					case 'do_add':
 						$c_name = $_POST["c_name"];
-						$fk_depart_id = $_POST["fk_depart_id"];
 						$c_office_phone = $_POST["c_office_phone"];
 						$fk_em_id = $_POST["fk_em_id"];
 						//insert ban ghi
-						$this->model->query("insert into tbl_department (fk_depart_id,c_name,c_office_phone,fk_em_id) values('fk_depart_id','$c_name','$c_office_phone','$fk_em_id')");
+						$this->model->query("insert into tbl_department (c_name,c_office_phone,fk_em_id) values('$c_name','$c_office_phone','$fk_em_id')");
 						header("location:index.php?controller=department");
 						break;
 				}
